@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.button{
+  width: 80px;
+  height: 40px;
+  color: white;
+  background-color: rgb(19, 19, 19);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:active{
+  background-color: rgb(84, 84, 84);
+}
+
+#buttons {
+  display: flex;
+  gap: 10px;
+}
+
