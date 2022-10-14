@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculadora</title>
+</head>
+
+<body>
+  <div class="container">
+    <header><h1>CALCULADORA</h1></header>
+    <div class="infos">
+      <div class="eu">
+        <img src="img/canvafoto2-removebg-preview (1).png" alt="Guilherme">
+        <p>Desenvolvido por Guilherme Arguelho</p>
+      </div>
+      <div class="github">
+        <a href="https://github.com/GuilhermeArguelho">
+          <img src="img/logo-github.svg" alt="GitHub">
+        </a>
+        <a href="https://github.com/GuilhermeArguelho">Meu GitHub</a>
+      </div>
+      <div class="data">
+        <img src="img/calendar_month_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+        <p>Data de Realização - 25/09/2022 </p>
+      </div>
+    </div>
+    <div class="container-calc">
+      <div class="cabeca">
+        <div class="resultado" id="result"></div>
+      </div>
+      <div class="numeros-operacoes">
+        <div class="numeros">
+          <button class="btn" onclick="insert('7')">7</button>
+          <button class="btn" onclick="insert('8')">8</button>
+          <button class="btn" onclick="insert('9')">9</button>
+          <button class="btn" onclick="insert('4')">4</button>
+          <button class="btn" onclick="insert('5')">5</button>
+          <button class="btn" onclick="insert('6')">6</button>
+          <button class="btn" onclick="insert('1')">1</button>
+          <button class="btn" onclick="insert('2')">2</button>
+          <button class="btn" onclick="insert('3')">3</button>
+          <button class="btn" onclick="insert('0')">0</button>
+          <button class="btn" onclick="insert('.')">.</button>
+        </div>
+        <div class="operacoes">
+          <button class="btn" onclick="limpar()">C</button>
+          <button class="btn" onclick="backspace()" id="img-btn">
+            <img id="img-bs" src="img/backspace.svg" alt="backspace">
+          </button>
+          <button class="btn" onclick="insert('/')">÷</button>
+          <button class="btn" onclick="insert('*')">x</button>
+          <button class="btn" onclick="insert('+')">+</button>
+          <button class="btn" onclick="calcular()">=</button>
+          <button class="btn" onclick="insert('-')">-</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
